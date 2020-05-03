@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.filter;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +8,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.example.demo.services.MyUserDetailsService;
+import com.example.demo.util.JwtUtil;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

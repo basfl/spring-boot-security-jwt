@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +11,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.example.demo.filter.JwtRequestFilter;
+import com.example.demo.services.MyUserDetailsService;
 
 @EnableWebSecurity
 public class SecurityConfigurer  extends WebSecurityConfigurerAdapter{
